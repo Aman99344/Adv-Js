@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="hello">Hello priya</div>
+    <button id="button" onclick="hello()">Click</button>
+
+
+
+    <script>
+        // function hello() {
+        //     for (let i = 0; i < 5; i++) {
+        //         setTimeout(function () {
+        //             var temp = document.createElement("h1")
+        //             console.log(temp);
+        //             var temp2 = document.createTextNode("hello guys")
+        //             temp.appendChild(temp2)
+        //             document.body.appendChild(temp)
+        //         },1000)
+        //     }
+
+        //}
+
+        // document.getElementById("hello").addEventListener("click", function () {
+        //     console.log("div clicked");
+        // })
+
+        //   function hello(){
+        //     console.log("div clicked s");
+        //   }
+
+        function hello() {
+            var temp =  document.getElementById("hello")
+            temp.remove();
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div id="hello">Hello div</div>
+<button onclick="add()">on</button>
+<button onclick="remove()">off</button>
+
+
+
+<script>
+    function add() {
+        var temp = document.getElementById("hello")
+        console.log(temp);
+        temp.classList.add("classAdded")
+    }
+
+    function remove() {
+        var temp = document.getElementById("hello")
+        console.log(temp);
+        temp.classList.remove("classAdded")
+    }
+
+</script> -->
