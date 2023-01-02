@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+      background-color: black;
+      color: white;
+      display: flex;
+      margin-top: 50px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .mainContainer{
+        border: 2px solid white;
+        height: 85vh;
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        height: 45px;
+        width: 300px;
+        margin: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        color: rgb(63, 62, 62);
+        outline: none;
+        border-style: none;
+        border-radius: 10px;
+    }
+
+    h1{
+        margin: 10px;
+    }
+
+    button{
+        width: 150px;
+        height: 50px;
+        font-size: 1rem;
+        color: black;
+        font-weight: 600;
+        padding: 10px;
+        background-color: rgb(162, 228, 124);
+        border-radius: 10px;
+        margin-top: 25px;
+    }
+
+    .result{
+        margin-top: 20px;
+        /* border: 2px solid rgb(247, 249, 247); */
+    }
+
+    .result p{
+        margin: 20px;
+        font-size: 1.2rem;
+    }
+
+</style>
+
+<body>
+    <div class="mainContainer">
+
+
+            <h1>ADD USER DETAILS</h1>
+
+        
+
+        <div class="inputContainer">
+
+            <input id="name" type="text" placeholder="Full Name">
+            <input id="email" type="email" placeholder="Email">
+            <input id="number" type="number" placeholder="Number">
+
+            <button onclick="user()">Add user details</button>
+
+        </div>
+
+        <div id="outputDiv" class="result">
+            <p id="p1"></p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+            
+        </div>
+    </div>
+
+
+    <script>
+
+        function user() {
+
+            var name = document.getElementById("name").value
+            var email = document.getElementById("email").value
+            var number = document.getElementById("number").value
+
+           var p1 = document.getElementById("p1").innerHTML = "Name:- " + name;
+           var p2 = document.getElementById("p2").innerHTML = "Email:- "+ email;
+           var p3 = document.getElementById("p3").innerHTML = "Number:-"+ number;
+        
+        }
+
+    </script>
+
+</body>
+
+</html>
