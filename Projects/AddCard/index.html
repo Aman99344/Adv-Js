@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .card {
+            border: 2px solid red;
+            width: 300px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 1rem;
+        }
+
+        button {
+            border: 2px solid green;
+            padding: .5rem 1rem,
+
+        }
+
+        .mainDiv {
+            border: 2px solid red;
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <input id="name" type="text">
+        <button onclick="hello()">Click me</button>
+    </div>
+
+    <script>
+        var mainDiv = document.createElement("div")
+        mainDiv.classList.add("mainDiv")
+
+        
+        function hello() {
+            var name = document.getElementById("name").value
+            var div = document.createElement("div")
+            div.classList.add("card")
+            var h4 = document.createElement("h4")
+            // var p = document.createElement("p") 
+
+            var h1Text = document.createTextNode(`Hello my Name is ${name}`)
+            // var pText= document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, minus.")
+
+            h4.appendChild(h1Text)
+            // p.appendChild(pText)
+
+            div.appendChild(h4)
+            // div.appendChild(p)
+
+            mainDiv.appendChild(div)
+
+            document.body.appendChild(mainDiv)
+
+    
+        }
+    </script>
+</body>
+
+</html>
