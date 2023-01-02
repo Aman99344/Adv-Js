@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bulb {
+            height: 300px;
+            width: 300px;
+            border-radius: 150px;
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            padding: 20px;
+        }
+
+        button{
+            width: 80px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            border-style: none;
+            background-color: rgb(32, 126, 194);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="bulb"></div>
+    <img src="./lightbulb-png-846-removebg-preview.png" alt="">
+
+    <div class="buttons">
+        <button onclick="hello()">On</button>&nbsp;&nbsp;
+        <button onclick="hello1()">Off</button>
+    </div>
+
+
+    <script>
+
+        function hello() {
+            var temp = document.getElementsByClassName("bulb")
+            temp[0].setAttribute("style", "background-color: yellow")
+        }
+
+        function hello1() {
+            var temp = document.getElementsByClassName("bulb")
+            temp[0].setAttribute("style", "background-color: white")
+
+        }
+
+
+    </script>
+</body>
+
+</html>
