@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+</head>
+<style>
+    div {
+        display: flex;
+        border: 2px solid red;
+        width: 50%;
+        height: 5vh;
+        margin: auto;
+        justify-content: space-around;
+        align-items: center;
+    }
+</style>
+
+<!-- ========================================================== -->
+
+<body>
+
+    <div>
+        <input id="inputOne" type="text">
+        <p>+</p>
+        <input id="inputTwo" type="text">
+        <button onclick="sum()">sum</button>
+    </div>
+
+    <!-- ===================================================== -->
+
+    <script>
+
+        function sum() {
+
+            var inputOne = +document.getElementById("inputOne").value;
+            var inputTwo = +document.getElementById("inputTwo").value;
+            console.log(inputOne, inputTwo);
+            var result = inputOne + inputTwo;
+            console.log(result);
+
+            var h1 = document.createElement("h1")
+            var h1Text = document.createTextNode(result)
+            h1.appendChild(h1Text)
+            console.log(h1);
+            document.body.append(h1)
+
+            document.getElementById("inputOne").value = "";
+            document.getElementById("inputTwo").value = "";
+
+        }
+    </script>
+</body>
+
+</html>
