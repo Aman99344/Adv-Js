@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .mainContainer {
+            height: 97vh;
+            width: 97vw;
+            margin: auto;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            outline: none;
+            border: 2px solid aqua;
+            width: 200px;
+            height: 35px;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <input id="inputBox" oninput="textDisplay()" type="text">
+        <p id="para"></p>
+    </div>
+
+
+    <script>
+        function textDisplay () {
+            
+            var input = document.getElementById("inputBox").value;
+            var para = document.getElementById("para")
+            para.innerHTML= input;
+        }
+         
+    </script>
+</body>
+
+</html>
