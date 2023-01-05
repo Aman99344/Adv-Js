@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>402 DOM</title>
+    <style>
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 80px;
+        }
+        h1{
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <h1>Geekster</h1>
+        <h3>Click on the button to add image element</h3>
+        <button onclick="sayHello()">click here</button>
+        <h1 id="h1Text"></h1>
+        <img id="image" alt="">
+
+    </div>
+
+    <script>
+        
+        
+
+        function sayHello() {
+
+          var h1Text = document.getElementById("h1Text");
+           h1Text.innerHTML = "Image Element Added";
+          var image1 = document.getElementById("image")
+          image.src="https://geekster.in/images/logo.svg"
+ 
+
+        }
+
+    </script>
+</body>
+
+</html>
