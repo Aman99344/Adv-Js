@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1>My shopping List</h1>
+        <label for="input">Enter a new item:</label>
+        <input id="inputval" type="text">
+        <button onclick="addItems()">Add items</button>
+    </div>
+
+
+
+    <script>
+        function addItems() {
+            var inputVal = document.getElementById("inputval").value;
+            // console.log(inputVal);
+            var div = document.createElement("div")
+
+            if (inputVal === "") {
+                var warning = alert("Enter the Items")
+            } else {
+
+                div.setAttribute("style", "display:flex")
+                div.style.justifyContent="center"
+
+                var ul = document.createElement("ul")
+                var li = document.createElement("li")
+
+                var delButton = document.createElement("BUTTON")
+
+                console.log(delButton);
+                delButton.style.marginLeft = "100px"
+                delButton.style.marginTop = "18px"
+                delButton.style.height = "fit-content"
+                delButton.style.borderStyle="none"
+    
+
+                delButton.style.boxShadow="0px 0px 1px 1px grey"
+                delButton.style.borderRadius="2px"
+                delButton.style.backgroundColor="white"
+
+                var text = document.createTextNode("Delete")
+      
+            
+
+
+                div.appendChild(ul)
+                ul.appendChild(li)
+                delButton.appendChild(text)
+
+                div.appendChild(delButton)
+
+
+                document.body.appendChild(div)
+                li.innerHTML = inputVal;
+
+
+
+                delButton.addEventListener("click", (event) => {
+                    div.remove();
+                })
+
+                document.getElementById("inputval").value="";
+            }
+
+
+
+
+
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
