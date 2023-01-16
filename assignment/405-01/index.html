@@ -11,17 +11,20 @@
 
 <body>
 
-    <div>
-        <h2>World Country Data</h2>
+    <div class="headingContainer">
+        <h1>World Country Data</h1>
         <p id="subheading"></p>
     </div>
 
-    <div id="lowerdiv">
-        <div id="buttonContainer">
-            <button id="populationButton" onclick="buttonOneClicked()">Population</button>
-            <button id="languageButton" onclick="buttonTwoClicked()">languages</button>
+    <div id="lowerdiv" class="lowerdiv">
+        <div id="buttonContainer" class="buttonContainer">
+            <div class="buttonCo">
+                <button id="populationButton" onclick="buttonOneClicked()">Population</button>
+                <button id="languageButton" onclick="buttonTwoClicked()">languages</button>
+                <p id="graphTitle">10 most populated contries in the world</p>
+
+            </div>
         </div>
-        <p id="graphTitle">10 most populated contries in the world</p>
 
         <div id="graphContainer">
            <div id="graph">
