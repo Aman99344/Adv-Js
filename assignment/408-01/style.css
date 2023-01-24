@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+
+}
+
+
+.maincontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.heading{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-size: 3rem;
+}
+
+.inputs {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+
+
+.inputs button {
+    width: 10%;
+    height: 40%;
+    margin: 0.3rem;
+    font-size: 1rem;
+    background-color:#e3a096;
+    border: none;
+    color: white;
+
+
+}
+
+
+.data {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+::placeholder{
+    color: #d2cece;
+}
+
+input {
+    width: 13%;
+    height: 40%;
+    margin: 0.2rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    border: 2px #c6adaa solid;
+    outline: none;
+}
+
+.data #table {
+    width: 67%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+  
+}
+
+.tr {
+    width: 100%;
+    height: 3.5rem;
+    background-color:#c8a8a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.td {
+    width: 26%;
+    height: 100%;
+    border-spacing: 1rem 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0.5rem; 
+
+}
+.td p{
+    font-size: .7rem;
+    color: gray;
+}
+.btn{
+    width: 21%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+
+.btn button{
+    width: 23%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0.1rem;
+    border: none;
+        
+}
