@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: #1b1d1d;
+}
+
+.header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.header h1 {
+  color: white;
+  margin-left: 5px;
+}
+
+h3 {
+  color: white;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main {
+  background-color: #212121;
+}
+
+.maindiv {
+  width: 45%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  /* border: 2px solid red; */
+}
+
+.maindiv h3{
+    margin-top: 20px;
+}
+
+.stalk{
+    color: white;
+    font-size: 1.2rem;
+}
+
+#searchBox {
+  margin-top: 20px;
+  width: 30%;
+  height: 7vh;
+  border-radius: 2px;
+  margin-left: 50px;
+}
+
+#searchButton {
+  width: 8%;
+  height: 7vh;
+  color: white;
+  background-color: #1b1d1d;
+  font-weight: 600;
+  margin-left: -5px;
+  border: 2px solid gray;
+  border-left: none;
+  border-radius: 2px;
+}
+
+.clearButton {
+  border-style: none;
+  background: transparent;
+  color: white;
+}
+.profileContainer {
+  /* border: 2px solid green; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.innerDiv {
+  display: flex;
+  /* border: 2px solid red; */
+  align-items: center;
+  margin: 1rem;
+  width: 20%;
+}
+
+.innerDiv img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.innerDiv div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.profile{
+    color: grey;
+    text-decoration: none;
+}
