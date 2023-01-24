@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.upperContainer{
+    width: 100%;
+    height: 50vh;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(rgba(104, 137, 153, 0.6), rgba(55, 83, 97, 0.6)), url("./images/globe-2.jpg"); 
+    background-size: cover;
+}
+
+h1{
+    margin: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+
+
+
+.mid{
+    width: 100%;
+    height: 25vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button button{
+    height: 6vh;
+    padding: .5rem 1rem;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #895be6;
+    color: white;
+}
+
+button:hover{
+    transform: scale(0.8);
+}
+
+input{
+    border: none;
+    padding: 1rem;
+    border-radius: 50px;
+    outline: none;
+    width: 80%;
+    text-align: center;
+}
+
+.mid p {
+    color: white;
+    font-size: 1.1rem;
+}
+
+.lowerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    /* border: 2px solid red; */
+    width: 15vw;
+    height: 20vh;
+    color: white;
+    /* background-image: url(./images/map_image.jpg); */
+    background: linear-gradient(rgba(71, 135, 166, 0.6), rgba(52, 85, 102, 0.6)), url("./images/map_image.jpg"); 
+    background-size: cover;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px grey;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
