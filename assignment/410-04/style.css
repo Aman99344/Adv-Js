@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #0A2647; */
+    background: #0f0c29;  
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
+
+}
+.maincontainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading{
+    width:50%;
+    height: 8%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5923af;
+}
+.heading h1{
+    font-weight: 600;
+    color: white;
+}
+.search{
+    width:25%;
+    border-radius: 10px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #512c9a;
+
+}
+input{
+    width: 70%;
+    height: 25%;
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    border-radius: 10px;
+}
+button{
+    width: 25%;
+    height: 20%;
+    background-color: #201747;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.output{
+    width:25%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.name{
+    width:100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #502e87;
+}
+.name h3{
+    color: white;
+}
+
+.Weatherdetails p{
+    color: #3e159d;
+    font-size: 1.1rem;
+    
+}
+
+.Weatherdetails a{
+    color: #0c0612;
+}
+
+.Weatherdetails{
+    width:100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 1rem;
+}
