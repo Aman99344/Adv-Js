@@ -42,3 +42,4 @@ const inputVal = inputSearch.value;
 
 
 }
+
